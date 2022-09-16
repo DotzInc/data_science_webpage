@@ -7,7 +7,7 @@ SERVER_NAME = os.getenv(
     "SERVER_NAME", "localhost:{0}".format(os.getenv("PORT", "8000"))
 )
 # SQLAlchemy.
-pg_user = os.getenv("POSTGRES_USER", "hello")
+pg_user = os.getenv("POSTGRES_USER", "data_science_webpage")
 pg_pass = os.getenv("POSTGRES_PASSWORD", "password")
 pg_host = os.getenv("POSTGRES_HOST", "postgres")
 pg_port = os.getenv("POSTGRES_PORT", "5432")

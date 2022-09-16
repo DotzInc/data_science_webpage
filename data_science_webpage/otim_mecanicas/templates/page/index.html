@@ -1,0 +1,18 @@
+{% extends "layouts/index.html" %}
+
+{% block title %}Dotz Data Science{% endblock %}
+
+{% block body %}
+
+<p class="text-center text-lg">
+  🚀 Bem vindo ao otimizador de Data Science!
+</p>
+
+<form method="post">
+  Yaml: <textarea name="yaml_data" cols="120" rows="25"></textarea>
+  <br /><br />
+  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Otimizar</button>
+</form>
+
+
+{% endblock %}

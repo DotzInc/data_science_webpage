@@ -1,8 +1,8 @@
 import pytest
 
 from config import settings
-from hello.app import create_app
-from hello.extensions import db as _db
+from data_science_webpage.app import create_app
+from data_science_webpage.extensions import db as _db
 
 
 @pytest.fixture(scope="session")

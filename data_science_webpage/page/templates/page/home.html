@@ -1,0 +1,21 @@
+{% extends "layouts/index.html" %}
+
+{% block title %}Dotz Data Science{% endblock %}
+
+{% block body %}
+<div class="flex justify-center pt-24 pb-12 px-2 sm:px-0">
+  <figure>
+    <img src="{{ static_url_for('static', filename='images/ai_generated_img.png') }}" width="640" height="360"
+      title="AI Generated Image" />
+    <figcaption style="text-align: center">Dotz Data Science - Imagem gerada por Inteligencia Artificial</figcaption>
+  </figure>
+</div>
+
+<p class="text-center text-lg">
+  <strong>
+    <a class="border-b border-gray-900 mb-1" href="otim">Otimizador</a>
+  </strong>
+  de Data Science
+</p>
+
+{% endblock %}

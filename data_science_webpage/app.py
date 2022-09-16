@@ -3,11 +3,12 @@ from flask import Flask
 from werkzeug.debug import DebuggedApplication
 from werkzeug.middleware.proxy_fix import ProxyFix
 
-from hello.page.views import page
-from hello.up.views import up
-from hello.extensions import db
-from hello.extensions import debug_toolbar
-from hello.extensions import flask_static_digest
+from data_science_webpage.page.views import page
+from data_science_webpage.up.views import up
+from data_science_webpage.otim_mecanicas.views import otim
+from data_science_webpage.extensions import db
+from data_science_webpage.extensions import debug_toolbar
+from data_science_webpage.extensions import flask_static_digest
 
 
 def create_celery_app(app=None):
@@ -54,6 +55,7 @@ def create_app(settings_override=None):
 
     app.register_blueprint(up)
     app.register_blueprint(page)
+    app.register_blueprint(otim)
 
     extensions(app)
 
